@@ -1,6 +1,6 @@
 {
   "name": "@additor/node-quill-converter",
-  "version": "1.4.2",
+  "version": "2.0.0",
   "description": "Convert HTML to Delta or Delta to HTML",
   "keywords": [
     "node",
@@ -18,8 +18,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "jsdom": "^12.0.0",
-    "@additor/quill": "2.0.4"
+    "@additor/quill": "2.0.4",
+    "puppeteer": "^1.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.18.0",
