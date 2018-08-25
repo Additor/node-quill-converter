@@ -9,14 +9,17 @@
     "convert",
     "html"
   ],
-  "homepage": "https://github.com/joelcolucci/node-quill-converter",
+  "homepage": "https://github.com/Additor/node-quill-converter",
   "bugs": {
-    "url": "https://github.com/joelcolucci/node-quill-converter/issues"
+    "url": "https://github.com/Additor/node-quill-converter/issues"
   },
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "author": "Sungwoo Cho",
   "license": "MIT",
-  "private": false,
+  "private": true,
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register ./test/convert.test.js"
+  },
   "dependencies": {
     "@additor/quill": "2.0.4",
     "puppeteer": "^1.7.0"
@@ -25,8 +28,5 @@
     "babel-core": "^6.18.0",
     "babel-preset-es2015": "^6.24.1",
     "mocha": "^5.2.0"
-  },
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register ./test/convert.test.js"
   }
 }

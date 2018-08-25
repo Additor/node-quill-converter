@@ -1,6 +1,6 @@
 
 import { mockOps } from './mock';
-import { convertDeltaToHtml } from '../lib';
+import { convertDeltaToHtml } from '../index';
 import assert from 'assert';
 
 describe('convertDeltaToHtml', () => {
