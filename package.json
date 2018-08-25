@@ -16,7 +16,7 @@
   "main": "./index.js",
   "author": "Sungwoo Cho",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register ./test/convert.test.js"
   },
