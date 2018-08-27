@@ -1,6 +1,6 @@
 {
   "name": "@additor/node-quill-converter",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Convert HTML to Delta or Delta to HTML",
   "keywords": [
     "node",
@@ -21,7 +21,7 @@
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register ./test/convert.test.js"
   },
   "dependencies": {
-    "@additor/quill": "2.0.4",
+    "@additor/quill": "2.0.5",
     "puppeteer": "^1.7.0"
   },
   "devDependencies": {

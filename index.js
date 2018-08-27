@@ -1,13 +1,13 @@
 const puppeteer = require('puppeteer');
 
-exports.convertDeltaToHtml = async (delta) => {
+exports.convertDeltaToHtml = async (delta, quillPath) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.setContent('<div id="root"></div>');
 
   // add quill script
   await page.addScriptTag({
-    path: './node_modules/@additor/quill/dist/quill.js',
+    path: quillPath,
   });
 
   // add quill.setContents() script
